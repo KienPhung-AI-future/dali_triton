@@ -10,3 +10,5 @@ sudo docker run --gpus=1 --rm -p8000:8000 -p8001:8001 -p8002:8002 -v/yolo/model_
 3 run client :
    python image_client_yolo_v4.py -m ensemble_dali_yolo_v4 person_dog.jpg 
 
+4 download model yolo v4 here :
+wget -O models/yolo_v4/1/models.onnx https://github.com/onnx/models/blob/master/vision/object_detection_segmentation/yolov4/model/yolov4.onnx?raw=true
